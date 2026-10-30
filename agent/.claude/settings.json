@@ -1,0 +1,20 @@
+{
+  "enabledPlugins": {
+    "telegram@claude-plugins-official": false
+  },
+  "enabledMcpjsonServers": ["voice", "telegram"],
+  "model": "sonnet",
+  "permissions": {
+    "defaultMode": "dontAsk",
+    "allow": [
+      "mcp__telegram__*",
+      "mcp__voice__transcribe_audio",
+      "mcp__claude_ai_Trello__*",
+      "mcp__claude_ai_Google_Calendar__*",
+      "WebSearch",
+      "WebFetch",
+      "Read(~/.claude/channels/telegram/inbox/**)"
+    ],
+    "deny": ["Bash", "PowerShell", "Write", "Edit", "NotebookEdit"]
+  }
+}

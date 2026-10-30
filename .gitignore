@@ -1,0 +1,11 @@
+# Personal assistant settings: board IDs, names, routine
+/local/
+.env
+*.env
+secrets/
+__pycache__/
+*.ogg
+*.oga
+.claude/settings.local.json
+.venv/
+.pytest_cache/

@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "voice": {
+      "command": "../.venv/Scripts/python.exe",
+      "args": ["-m", "mcp_voice"],
+      "env": {
+        "PYTHONPATH": ".."
+      }
+    },
+    "telegram": {
+      "command": "bun",
+      "args": [
+        "run",
+        "--cwd",
+        "${USERPROFILE}/.claude/plugins/cache/claude-plugins-official/telegram/0.0.7",
+        "--shell=bun",
+        "--silent",
+        "start"
+      ],
+      "env": {
+        "BUN_INSPECT": ""
+      }
+    }
+  }
+}
